@@ -82,6 +82,18 @@ export default StyleSheet.create({
       height: 'auto',
       marginLeft: 'auto'
     },
+    viewSocial: {
+      flex: 1,
+      flexDirection: 'row'
+    },
+    buttonSocial: {
+      backgroundColor: '#000000',
+      height:50,
+      borderRadius: 80,
+      marginLeft: 10,
+      marginBottom: 12,
+      marginTop: 10 ,
+    },
     viewFooter: {
       backgroundColor: '#ffffff',
       position: 'absolute',
