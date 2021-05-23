@@ -11,9 +11,18 @@ export default StyleSheet.create({
     },
     image: {
       width:300,
-      height: 150,
+      height: 80,
+      marginTop: 0,
+    },
+
+    card: {
+      width: '90%',
+      padding:2,
     },
   
+    cardButton: {
+      color:'#4fc4af',
+    },
     image2: {
       width: 400,
       height: 400,
@@ -74,11 +83,23 @@ export default StyleSheet.create({
       marginLeft: 'auto'
     },
     viewFooter: {
+      backgroundColor: '#ffffff',
       position: 'absolute',
       left: 0,
       right: 0,
       bottom: 0,
-      alignItems:'center'
+      alignItems:'center',
+      flex: 1,
+      flexDirection: 'row'
+    },
+    buttonFooter: {
+      backgroundColor: '#ffffff',
+      height:40,
+      borderRadius: 40,
+      marginLeft: 20,
+      marginBottom: 12,
+      marginTop: 10 ,
+      flex:1
     },
     header: {
       backgroundColor: '#4fc4af',
