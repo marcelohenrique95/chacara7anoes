@@ -1,9 +1,9 @@
 {
-  "name": "reactApp",
-  "displayName": "reactApp",
+  "name": "chacara7anoes",
+  "displayName": "chacara7anoes",
   "expo": {
-    "name": "reactApp",
-    "slug": "reactApp",
+    "name": "chacara7anoes",
+    "slug": "chacara7anoes",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

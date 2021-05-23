@@ -3,8 +3,8 @@ import React from 'react';
 import { Text, View, Image, TextInput, TouchableOpacity, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import styles from './styles'
+import { Header } from 'react-native-elements';
 import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
 Icon.loadFont();
 
 
@@ -13,20 +13,27 @@ function register() {
   alert('Confirmar')
 }
 
-export default function App({ navigation }) {
+const reserve = () => {
+  navigation.navigate('Reserve');
+}
 
+const contact = () => {
+  alert('Whatsapp: 9 8123-4218')
+}
+
+export default function App({ navigation }) {
+  
   return (
-    <NavigationContainer>
       <View style={styles.container} >
-        <StatusBar hidden />
-        <Image style={styles.image} source={require('./assets/chacara-logo.jpg')} />
+        <Header
         
-        <Button
-          title="TESTE NAVIGATION"
-          onPress={() =>
-            navigation.navigate("Reserve")
-          }
-        />
+         placement="left"
+         leftComponent={{ icon: 'menu', color: '#000000' }}
+         
+         rightComponent={{ icon: 'home', color: '#000000' }}
+         containerStyle={ styles.header }/>
+        <StatusBar hidden />
+        
 
         <TouchableOpacity style={styles.buttonReserve} onPress={() => register()}>
           <Text style={{ color: 'black', textAlign: 'center' }}>
@@ -34,42 +41,44 @@ export default function App({ navigation }) {
         </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonReserve} onPress={() => register()}>
+        <TouchableOpacity style={styles.buttonReserve} onPress={() => contact()}>
           <Text style={{ color: 'black', textAlign: 'center' }}>
             CONTATO
         </Text>
         </TouchableOpacity>
 
+        <Image style={styles.image} source={require('./assets/chacara-logo.jpg')} />
 
-        <TouchableOpacity style={styles.buttonReserve} onPress={() => register()}>
+
+        <TouchableOpacity style={styles.buttonReserve} onPress={() => navigation.navigate('Reserve')}>
           <Text style={{ color: 'black', textAlign: 'center' }}>
             RESERVAR
         </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonReserve} onPress={() => register()}>
+        <TouchableOpacity style={styles.buttonReserve} onPress={() => photos()}>
           <Text style={{ color: 'black', textAlign: 'center' }}>
             FOTOS
         </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonReserve} onPress={() => register()}>
+        <TouchableOpacity style={styles.buttonReserve} onPress={() => maps()}>
           <Text style={{ color: 'black', textAlign: 'center' }}>
             MAPA
         </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonFacebook}  onPress={() => { navigaion }}>
-          <Icon name="google" size={50} color="white" />
+        <TouchableOpacity   onPress={() => { navigaion }}>
+          <Icon name='facebook'
+                size= {50}
+                color='#3b5998'
+                 />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonFacebook} onPress={() => { navigaion }}>
-          <Icon name="facebook" size={50} color="white" />
-        </TouchableOpacity>
-        <Text style={styles.textAddres}>Jardim Universitário, Cuiabá-MT . (65)98123-4218</Text>
-
+        <View style={styles.viewFooter}>
+          <Text style={styles.textAddres}>Jardim Universitário, Cuiabá-MT.</Text>
+          </View>
       </View>
-    </NavigationContainer>
   );
 }
 

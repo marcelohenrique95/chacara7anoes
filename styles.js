@@ -4,9 +4,10 @@ export default StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#000000',
+      width: '100%',
+      height: '100%',
       alignItems: 'center',
-      justifyContent: 'center',
-      padding: 20
+      padding: 5
     },
     image: {
       width:300,
@@ -67,13 +68,24 @@ export default StyleSheet.create({
     },
     textAddres: {
       backgroundColor: '#000000',
-      color: '#a35655',
+      color: '#4fc4af',
       width: 'auto',
       height: 'auto',
       marginLeft: 'auto'
     },
-    icon: {
-      
+    viewFooter: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      bottom: 0,
+      alignItems:'center'
+    },
+    header: {
+      backgroundColor: '#4fc4af',
+      justifyContent: 'space-around',
+      borderRadius: 5,
+      marginBottom: 100
+
     }
   });
   
