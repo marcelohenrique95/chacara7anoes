@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import ViewPhotos from '../screen/viewphotos/viewphotos';
 import Reserve from '../screen/reserve/reserve';
 import Home from '../screen/home';
+import { Header } from '../components/Header/Header';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ export default function Navigator() {
                 headerShown: false,
                 gestureEnabled:true,
                 cardOverlayEnabled:true,
+                headerTitle: () => <Header/>
               })}
           >
             <Stack.Screen name="Home" component={Home}/>
