@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 import styles from './styles'
 import { Card } from 'react-native-elements';
 import 'react-native-gesture-handler';
+import Header from '../../components/Header/Header';
 Icon.loadFont();
 
 
@@ -22,10 +23,15 @@ export default function Home({ navigation })  {
   }
   return (
     <View style={styles.container} >
+      <Header
+      
+      >
+
+      </Header>
 
       <StatusBar hidden />
 
-      <Image style={styles.image} source={require('./../../assets/chacara-logo.jpg')} />
+      <Image style={styles.image} source={require('./../../assets/chac-logo.png')} />
 
       <Card containerStyle={styles.card}>
         <Card.Title>Natal 2021 - R$ 2.500,00</Card.Title>

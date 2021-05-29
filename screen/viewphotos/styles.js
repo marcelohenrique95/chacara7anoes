@@ -5,14 +5,13 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: '#f0fffc',
         alignItems: 'center',
-        padding: 10
+        padding: 5
       },
 
     image: {
         width:'100%',
         height: '25%',
-        marginTop: 5,
-        margin: 1
+        margin: 1,
       },
 
 
