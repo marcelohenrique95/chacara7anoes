@@ -18,18 +18,30 @@ export default StyleSheet.create({
     marginBottom: 10,
     marginRight: '70%'
   },
+  textbig:{
+    fontSize: 30,
+    textAlign:'center',
+    margin: 10
+
+  },
+  textFinish:{
+    fontSize:15,
+    textAlign: 'center',
+    margin:5
+  },
   buttonReserve: {
-    backgroundColor: '#4fc4af',
+    backgroundColor: '#e85858',
     width: '60%',
     height: 55,
     borderRadius: 10,
+    margin:25,
     justifyContent: 'center'
   },
   inputTextNumber: {
     width: '30%',
     height: 50,
-    backgroundColor: '#4fc4af',
-    borderRadius: 20,
+    backgroundColor: '#e85858',
+    borderRadius: 16,
     marginBottom: 15,
     marginRight: '70%'
   },
@@ -42,8 +54,8 @@ export default StyleSheet.create({
   inputText: {
     width: '100%',
     height: 50,
-    backgroundColor: '#4fc4af',
-    borderRadius: 10,
+    backgroundColor: '#e85858',
+    borderRadius: 16,
     marginBottom: 10,
     padding:15,
   },
@@ -54,6 +66,16 @@ export default StyleSheet.create({
     width:'auto',
     borderColor: '#000'
   },
+  modal: {
+    width: '100%',
+    height: 50,
+    backgroundColor: '#e85858',
+    borderRadius: 16,
+    margin:10,
+    padding:20,
+    justifyContent: 'center'
+
+  }
 
 
 

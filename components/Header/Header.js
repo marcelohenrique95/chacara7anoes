@@ -1,28 +1,40 @@
 
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView } from 'react-native';
 import { Dimensions } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons'
+export default function Header({ navigation }) {
 
-export default function Header() {
+
+    const back = () => {
+        navigation.navigate('Home')
+    }
+
 
     return (
-        <View style={styles.header}> 
-        {/* icon for the menu */}
-            <Text style={styles.headerText}>Festas & Eventos</Text>
-        </View>
+        <SafeAreaView style={styles.header}>
+            <View >
+                <TouchableOpacity
+                    onPress={() => back()}>
+                    <Icon name='chevron-left'
+                        size={50}
+                        color='#fff'
+                    />
+                </TouchableOpacity>
+
+            </View>
+        </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
     header: {
-        width:Dimensions.get('screen').width,
-        height:'5%',
+        width: Dimensions.get('screen').width,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#4fc4af'
+        justifyContent: 'space-between',
+        backgroundColor: '#e85858',
     },
     headerText: {
         fontWeight: 'bold',

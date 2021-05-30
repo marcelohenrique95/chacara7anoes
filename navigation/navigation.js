@@ -5,6 +5,7 @@ import ViewPhotos from '../screen/viewphotos/viewphotos';
 import Reserve from '../screen/reserve/reserve';
 import Home from '../screen/home';
 import { Header } from '../components/Header/Header';
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 const Stack = createStackNavigator();
 

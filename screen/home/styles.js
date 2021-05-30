@@ -7,7 +7,6 @@ export default StyleSheet.create({
       width: '100%',
       height: '100%',
       alignItems: 'center',
-      padding: 20
     },
     image: {
       width:200,
@@ -19,10 +18,14 @@ export default StyleSheet.create({
     card: {
       width: '90%',
       padding:2,
+      borderRadius: 17,
+      backgroundColor: '#e85858'
     },
   
-    cardButton: {
-      color:'#f0fffc',
+    textCard: {
+      color:'#fff',
+      textAlign: 'center',
+      fontSize:15
     },
     image2: {
       width: 400,
@@ -84,35 +87,33 @@ export default StyleSheet.create({
       marginLeft: 'auto'
     },
     viewSocial: {
-      flex: 1,
-      flexDirection: 'row'
+      alignItems:'flex-start',
+      padding:10,
+      justifyContent: 'flex-start'
     },
     buttonSocial: {
       backgroundColor: '#f0fffc',
       height:50,
-      borderRadius: 80,
-      marginLeft: 10,
-      marginBottom: 12,
-      marginTop: 10 ,
     },
     viewFooter: {
-      backgroundColor: '#f0fffc',
+      backgroundColor: '#e85858',
       position: 'absolute',
       left: 0,
       right: 0,
       bottom: 0,
       alignItems:'center',
+      justifyContent: 'space-between',
       flex: 1,
       flexDirection: 'row'
     },
     buttonFooter: {
-      backgroundColor: '#f0fffc',
+      backgroundColor: '#e85858',
       height:40,
       borderRadius: 40,
       margin: 20
     },
     header: {
-      backgroundColor: '#4fc4af',
+      backgroundColor: '#e85858',
       justifyContent: 'space-around',
       borderRadius: 5,
       marginBottom: 100
